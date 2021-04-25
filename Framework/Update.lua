@@ -24,6 +24,7 @@ function DownloadFile(path, link)
 		File.write(Result.readAll())
 		File.close()
 	else
+		Output("Unable to download \""..link.."\"")
 		return false
 	end
 	
@@ -37,7 +38,7 @@ for i=1, 3 do
 	Output("Closing in "..tostring(i))
 	sleep(1)
 end
-Output("Zwolf was here")
+
 term.clear()
 term.setCursorPos(1, 1)
 
