@@ -18,4 +18,4 @@ function DownloadFile(path, link)
 end
 
 -- Download the update file along with everything else
-DownloadFile("Framework/Update.lua", "https://github.com/Alexflamer11/ComputerCraft/new/master/Framework/Update.lua")
+DownloadFile("Framework/Update.lua", "https://raw.githubusercontent.com/Alexflamer11/ComputerCraft/master/Framework/Update.lua")
