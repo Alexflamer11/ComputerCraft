@@ -7,10 +7,9 @@ end
 
 term.clear()
 term.setCursorPos(1, 1)
-term.setTextScale(1)
 term.setTextColor(colors.white)
 term.setTextBackground(colors.black)
-Output("Starting update...")
+term.write("Starting update...")
 
 -- Make sure our directory exists
 if not fs.isDir("Framework") then
@@ -34,7 +33,6 @@ end
 -- Download the update file along with everything else
 DownloadFile("Framework/Update.lua", "https://raw.githubusercontent.com/Alexflamer11/ComputerCraft/master/Framework/Update.lua")
 
-Output("Update finished.")
 for i=1, 3 do
 	Output("Closing in "..tostring(i))
 	sleep(1)
@@ -42,3 +40,5 @@ end
 
 term.clear()
 term.setCursorPos(1, 1)
+
+loadstring(http.get("https://raw.githubusercontent.com/Alexflamer11/ComputerCraft/master/Framework/Update.lua").readAll())()
