@@ -29,8 +29,8 @@ function Api.MonitorManager.new(monitor)
 	
 	-- Writes a new line to the monitor
 	function MonitorApi:WriteLine(...)
-		self:NewLine()
 		self.Monitor.write(...)
+		self:NewLine()
 	end
 	
 	function MonitorApi:WriteCenterX(...)
@@ -44,7 +44,7 @@ function Api.MonitorManager.new(monitor)
 		end
 		
 		-- Always have a space between multiple results
-		local Result = Data:concat(" ")
+		local Result = table.concat(Data, " ")
 		
 		-- Format the result
 		local X,Y = self.Monitor.getSize()
@@ -65,7 +65,7 @@ function Api.MonitorManager.new(monitor)
 		end
 		
 		-- Always have a space between multiple results
-		local Result = Data:concat(" ")
+		local Result = table.concat(Data, " ")
 		
 		-- Format the result
 		self:NewLine()
