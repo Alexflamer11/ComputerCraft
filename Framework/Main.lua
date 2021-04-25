@@ -18,7 +18,7 @@ function Api.MonitorManager.new(monitor)
 	
 	-- Start on a new line
 	function MonitorApi:NewLine()
-		self.Monitor.CursorPosX = self.CursorPosX + 1
+		self.CursorPosX = self.CursorPosX + 1
 		self.Monitor.setCursorPos(1, self.CursorPosX)
 	end	
 	
