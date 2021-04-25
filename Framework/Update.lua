@@ -35,6 +35,7 @@ end
 
 -- Download the update file along with everything else
 DownloadFile("Framework/Update.lua", "https://raw.githubusercontent.com/Alexflamer11/ComputerCraft/master/Framework/Update.lua")
+DownloadFile("Framework/Main.lua", "https://raw.githubusercontent.com/Alexflamer11/ComputerCraft/master/Framework/Main.lua")
 
 Output("Update finished")
 for i=3, 1, -1 do
