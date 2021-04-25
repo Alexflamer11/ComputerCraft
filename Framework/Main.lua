@@ -103,6 +103,8 @@ function Api.MonitorManager.new(monitor)
 	function MonitorApi:SetBackgroundColor(color)
 		self.Monitor.setBackgroundColor(color)
 	end
+	
+	return MonitorApi
 end
 
 return Api
